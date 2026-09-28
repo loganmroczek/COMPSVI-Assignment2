@@ -171,13 +171,6 @@ def find_infected_files(directory_path, extension=".encrypted"):
         find_infected_files('root', '.encrypted') should return:
         ['root/virus.encrypted', 'root/subdir/data.encrypted']
     """
-    # TODO: Implement this function
-    # Hints:
-    # 1. Base case: If it's a file, check if it has the extension
-    # 2. Recursive case: If it's a directory, check all items inside
-    # 3. You'll need to build and return a list of matching file paths
-    # 4. Use os.path.join() to create full paths
-    
     items = os.listdir(directory_path)
     infected_files = []
 
